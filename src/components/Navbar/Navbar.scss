@@ -1,10 +1,11 @@
 // Navbar.scss
 $background-color: #000E24;
 $text-color: white;
-$logo-text-color: #4FA1F3; // Assuming a blue color for the logo text
-$active-link-color: #ffffff; // White color for active links
+$logo-text-color: #4FA1F3;
+$active-link-color: #ffffff;
 
 .navbar {
+    z-index: 99;
     position: absolute;
     height: 100px;
     width: 95%;
@@ -30,19 +31,20 @@ $active-link-color: #ffffff; // White color for active links
         color: $text-color;
       }
     }
-
-  .navbar-links {
-    .navbar-link {
+      .navbar-link {
         color: $text-color;
         text-decoration: none;
-        margin-left: 2rem;
         font-size: 1rem;
         transition: color 0.3s ease;
 
       &.active {
         color: $active-link-color;
-        text-decoration: underline;
       }
+    }
+
+  .navbar-links {
+    .navbar-link {
+        margin-left: 2rem;
     }
   }
 }
