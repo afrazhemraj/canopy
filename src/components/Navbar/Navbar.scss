@@ -1,0 +1,48 @@
+// Navbar.scss
+$background-color: #000E24;
+$text-color: white;
+$logo-text-color: #4FA1F3; // Assuming a blue color for the logo text
+$active-link-color: #ffffff; // White color for active links
+
+.navbar {
+    position: absolute;
+    height: 100px;
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width:30px;
+        margin-right: 10px;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        color: $text-color;
+      }
+    }
+
+  .navbar-links {
+    .navbar-link {
+        color: $text-color;
+        text-decoration: none;
+        margin-left: 2rem;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+
+      &.active {
+        color: $active-link-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
