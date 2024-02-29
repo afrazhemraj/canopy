@@ -1,60 +1,47 @@
-$primary-color: #000E24;
-$secondary-color: white;
-.home-page {
-  position: absolute;
+.home{
   height: 100vh;
   width: 100vw;
+  background-color: #000E24;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.content {
-  z-index: -1;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding-left: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+h1{
   color: white;
-  display: flex;
-  align-items: center;
-
-  .infoarea{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-      button {
-          background: none;
-          border: none;
-          font-family: "Poppins", sans-serif;
-          font-weight: bold;
-          color: #008169;
-          cursor: pointer;
-      }
-  }
-
-  .imagearea {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: flex-start;
-
-       img{
-        z-index: -1;
-        width:100%;
-        opacity: 0.3;
-       }
-  }
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $primary-color;
-  color: $secondary-color;
+p{
+  color: white;
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+.highlight {
+  display: inline-block;
+  padding: 0 10px;
+  background: #4FA0F2;
+  color: #ffffff;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #4FA0F2;
+  border-radius: 50px;
+  cursor: pointer
 }

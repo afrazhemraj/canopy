@@ -1,50 +1,44 @@
-// Navbar.scss
-$background-color: #000E24;
-$text-color: white;
-$logo-text-color: #4FA1F3;
-$active-link-color: #ffffff;
+nav{
+  background-color: #000E24;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
 
-.navbar {
-    z-index: 99;
-    position: absolute;
-    height: 100px;
-    width: 95%;
-    font-family: "Poppins", sans-serif;
-    background-color: $background-color;
-    color: $text-color;
+img{
+  width: 50px;
+  margin-bottom: -5px;
+  margin-right: 30px;
+}
+.title{
+  font-size: 48px;
+  padding: 30px 50px;
+}
+
+.links{
+    padding: 30px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
+}
 
-    .navbar-logo {
-      display: flex;
-      align-items: center;
+.contact-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #4FA0F2;
+  border-radius: 50px;
+  cursor: pointer
+}
 
-      img {
-        width:30px;
-        margin-right: 10px;
-      }
-
-      .navbar-brand {
-        font-size: 1.5rem;
-        color: $text-color;
-      }
-    }
-      .navbar-link {
-        color: $text-color;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: color 0.3s ease;
-
-      &.active {
-        color: $active-link-color;
-      }
-    }
-
-  .navbar-links {
-    .navbar-link {
-        margin-left: 2rem;
-    }
-  }
+.navbar-link{
+  text-decoration: none;
+  color: white;
 }

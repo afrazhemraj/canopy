@@ -1,17 +1,18 @@
 import "./Home.scss";
-import geo from "../../assets/geo.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="container home-page">
+    <div className="home">
       <div className="content">
-        <div className="infoarea">
-          <header>Redefining Building Homes, One Robot at a Time.</header>
-          <button>see our robots →</button>
-        </div>
-        <div className="imagearea">
-          <img src={geo} alt="geometric design"></img>
-        </div>
+        <h1>
+          Redefining building homes, one{" "}
+          <span className="highlight">robot</span> at a time.
+        </h1>
+        <p>we’re on a quest to completely change the roofing industry</p>
+        <Link className="navbar-link" to="/contact">
+          <div className="contact-button">Learn More</div>
+        </Link>
       </div>
     </div>
   );
