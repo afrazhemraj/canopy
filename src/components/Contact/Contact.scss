@@ -8,22 +8,13 @@
   }
 }
 
-.home{
+.contact {
   height: 100vh;
   width: 100vw;
   background-color: #000E24;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .home-content{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        animation: fadeIn 5s;
-          animation-fill-mode: forwards;
-  }
 
   h1{
     color: white;
@@ -32,24 +23,26 @@
     text-align: center;
   }
 
+  .contact-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+            animation: fadeIn 5s;
+              animation-fill-mode: forwards;
+  }
+
   p {
     color: white;
     font-size: 24px;
     padding: 20px 0px;
   }
 
-  .highlight {
-    display: inline-block;
-    padding: 0 10px;
-    background: #4FA0F2;
-    color: #ffffff;
-  }
-
   .contact-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0px 0px;
     width: 200px;
     height: 50px;
     font-size: 20px;

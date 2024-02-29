@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <div className="content">
+      <div className="home-content">
         <h1>
           Redefining building homes, one{" "}
           <span className="highlight">robot</span> at a time.
