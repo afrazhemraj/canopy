@@ -1,14 +1,4 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.home{
+.construction {
   height: 100vh;
   width: 100vw;
   background-image: radial-gradient(circle, #000E24, #102047);
@@ -16,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  .home-content{
+  .construction-content {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -25,12 +15,7 @@
     animation-fill-mode: forwards;
   }
 
-  .home-subtitle{
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  h1{
+  h1 {
     color: white;
     font-size: 60px;
     font-weight: bold;
@@ -41,13 +26,6 @@
     color: white;
     font-size: 24px;
     padding: 20px 0px;
-  }
-
-  .highlight {
-    display: inline-block;
-    padding: 0 10px;
-    background: #4FA0F2;
-    color: #ffffff;
   }
 
   .contact-button {
@@ -64,8 +42,8 @@
   }
 }
 
-@media screen and (max-width: 1000px){
-  .home {
+@media screen and (max-width: 1000px) {
+  .construction {
     height: 100vh;
     width: 100vw;
     background-image: radial-gradient(circle, #000E24, #102047);
@@ -73,7 +51,7 @@
     justify-content: center;
     align-items: center;
 
-    .home-content {
+    .construction-content {
       width: 80%;
       text-align: center;
     }

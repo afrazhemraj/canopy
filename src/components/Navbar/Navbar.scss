@@ -1,3 +1,13 @@
+@keyframes slide {
+  0% {
+    right: -50%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
 nav{
   z-index: 1;
   background-color: transparent;
@@ -10,9 +20,9 @@ nav{
 }
 
 img{
-  width: 50px;
+  width: 100px;
   margin-bottom: -5px;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .title{
   font-size: 48px;
@@ -39,9 +49,28 @@ img{
   cursor: pointer
 }
 
-.navbar-link{
+.logo-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link, .logo-link, .home-logo-link{
   text-decoration: none;
   color: white;
+  margin-right: 20px;
+}
+
+.home-logo-link{
+  margin-right: 0px;
+}
+
+.navbar-link:hover {
+  color: #b2d6f9;
+}
+
+.hamburger{
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -58,5 +87,40 @@ img{
 
     .contact-button {
       display: none;
+    }
+
+    .links{
+      display:none;
+    }
+
+    .hamburger{
+      display: block;
+      margin: 0px 20px;
+    }
+
+    .links{
+      display: none;
+    }
+
+    .links.active{
+      animation: slide 1s;
+      animation-fill-mode: forwards;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      border-radius: 10px;
+      background-color: #1869af;
+      padding-bottom: 0px;
+    }
+
+    .navbar-link{
+      margin-right: 0px;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 30px;
     }
 }

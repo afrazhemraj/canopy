@@ -6,11 +6,14 @@ const Home = () => {
     <div className="home">
       <div className="home-content">
         <h1>
-          Redefining building homes, one{" "}
-          <span className="highlight">robot</span> at a time.
+          Redefining roofing, one <span className="highlight">robot</span> at a
+          time.
         </h1>
-        <p>we’re on a quest to completely change the roofing industry</p>
-        <Link className="navbar-link" to="/contact">
+        <p className="home-subtitle">
+          Discover how our automation solutions are setting new standards in the
+          industry.
+        </p>
+        <Link className="home-logo-link" to="/contact">
           <div className="contact-button">Learn More</div>
         </Link>
       </div>
