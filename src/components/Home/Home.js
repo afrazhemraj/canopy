@@ -6,8 +6,8 @@ const Home = () => {
     <div className="home">
       <div className="home-content">
         <h1>
-          Redefining roofing, one <span className="highlight">robot</span> at a
-          time.
+          Redefining automation, one <span className="highlight">robot</span> at
+          a time.
         </h1>
         <p className="home-subtitle">
           Discover how our automation solutions are setting new standards in the
